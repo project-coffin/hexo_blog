@@ -1,0 +1,4 @@
+
+[submodule "themes/brewski"]
+	path = themes/brewski
+	url = https://github.com/roseline124/hexo-theme-brewski.git
