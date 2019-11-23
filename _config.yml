@@ -2,13 +2,13 @@
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
-# Site
+# Default Post Config
 title: Hexo
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
-language: en
+author: Roseline Song
+language: ko
 timezone: ''
 
 # URL
