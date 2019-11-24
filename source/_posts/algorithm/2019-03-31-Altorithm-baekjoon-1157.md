@@ -29,7 +29,7 @@ cover: "/assets/dailystudy.jpg"
 
 ### 해결
 
-{% highlight python %}
+```
 
 from collections import Counter
 
@@ -51,7 +51,7 @@ else :
     print('?')
 
 
-{% endhighlight %}
+```
 
 <br>
 <br>

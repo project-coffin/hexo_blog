@@ -51,7 +51,7 @@ dž는 무조건 하나의 알파벳으로 쓰이고, d와 ž가 분리된 것�
 
 ### 해결
 
-{% highlight python %}
+```
 
 from collections import Counter
 
@@ -63,7 +63,7 @@ for c in croatia :
     
 print(sum(Counter(word).values()))
 
-{% endhighlight %}
+```
 
 <br>
 <br>

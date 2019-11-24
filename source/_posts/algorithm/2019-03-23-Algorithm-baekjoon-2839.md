@@ -38,7 +38,7 @@ cover: "/assets/dailystudy.jpg"
 
 <br>
 
-{% highlight python %}
+```
 
 def sugar(N) :
     for y in range( (N//3)+1) :
@@ -51,7 +51,7 @@ def sugar(N) :
 N = int(input()) #배달해야할 설탕 킬로그램         
 print(sugar(N))
 
-{% endhighlight %}
+```
 
 <br>
 <br>

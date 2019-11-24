@@ -20,7 +20,7 @@ Restaurant 모델에는 음식점 이름, 카테고리(한식, 중식 등), 주�
 
 <br>
 
-{% highlight python %}
+```
 
 import PIL # Review 모델의 imagefield를 위해 추가 
 from django.db import models
@@ -48,7 +48,7 @@ class Review(models.Model) :
 
     ...(생략)...
 
-{% endhighlight %}
+```
 
 <br>
 <br>
@@ -61,14 +61,14 @@ class Review(models.Model) :
 
 <br>
 
-{% highlight python %}
+```
 
 >>> restaurants = Review.objects.select_related('restaurant') #foreignkey 변수 이름
 
 >>> restaurants
 <QuerySet [<Review: 은성밥차 맛집 리뷰>]>
 
-{% endhighlight %}
+```
 
 <br>
 <br>
@@ -77,7 +77,7 @@ select_related() 함수에 Review 모델이 foreignkey로 잡은 `restaurant`이
 
 <br>
 
-{% highlight python %}
+```
 
 >>> print(restaurants.query)
 
@@ -99,7 +99,7 @@ FROM "reviewBoard_review"
 INNER JOIN "reviewBoard_restaurant" 
 ON ("reviewBoard_review"."restaurant_id" = "reviewBoard_restaurant"."id")
 
-{% endhighlight %}
+```
 
 <br>
 <br>
@@ -114,14 +114,14 @@ ON ("reviewBoard_review"."restaurant_id" = "reviewBoard_restaurant"."id")
 
 **인터랙티브 셸에서 확인**
 
-{% highlight python %}
+```
 >>> from reviewBoard.models import Restaurant, Review
 >>> r2 = Restaurant.objects.all()
 >>> r2[0].review_set.all()
 
 <QuerySet [<Review: 은성밥차 맛집 리뷰>]>
 
-{% endhighlight %}
+```
 
 참조당하는 테이블 Restaurant의 데이터 객체에서 `참조하는 테이블(소문자)_set.all()`과 같은 형태로 적어주면 관계 테이블의 데이터를 가져올 수 있다. 
 
@@ -132,13 +132,13 @@ ON ("reviewBoard_review"."restaurant_id" = "reviewBoard_restaurant"."id")
 
 <br>
 
-{% highlight python %}
+```
 
 def index(request) :
     restaurants = Restaurant.objects.all()
     return render(request, "reviewBoard/index.html", {'restaurants' : restaurants})
 
-{% endhighlight %}
+```
 
 <!-- <br>
 <br>

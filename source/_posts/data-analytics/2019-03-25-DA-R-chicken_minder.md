@@ -96,7 +96,7 @@ cover: "/assets/images/chicken.jpg"
 
 <br>
 
-{% highlight python %}
+```
 
 clean_chicken_data <- function(year) {
   library(readxl)
@@ -158,7 +158,7 @@ clean_chicken_data <- function(year) {
   
 } 
 
-{% endhighlight %}
+```
 
 
 
@@ -179,7 +179,7 @@ Gapminder는 故 한스 로슬링 교수님이 만드신 통계 분석 서비스
 
 <br>
 
-{% highlight python %}
+```
 
 library(dplyr)
 library(COUNT)
@@ -258,7 +258,7 @@ p <- df2 %>%
 ggplotly(p, tooltip = "text")
 
 
-{% endhighlight %}
+```
 
 <br>
 <br>

@@ -32,7 +32,7 @@ cover: "/assets/dailystudy.jpg"
 
 ### 해결
 
-{% highlight python %}
+```
 
 # function
 def checker(word) :
@@ -62,7 +62,7 @@ for w in words :
     
 print(num)
 
-{% endhighlight %}
+```
 
 <br>
 <br>

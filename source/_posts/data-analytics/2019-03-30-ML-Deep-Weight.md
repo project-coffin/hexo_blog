@@ -28,11 +28,11 @@ changefreq : week
 
 <br>
 
-{% highlight python %}
+```
 
 Δω = αδx
 
-{% endhighlight %}
+```
 
 <br>
 
@@ -52,11 +52,11 @@ changefreq : week
 
 <br>
 
-{% highlight python %}
+```
 
 Δω = 1/N ∑(k=1, N) Δω(k)
 
-{% endhighlight %}
+```
 
 <br>
 

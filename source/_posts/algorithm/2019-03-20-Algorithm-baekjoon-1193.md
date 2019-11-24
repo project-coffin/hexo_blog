@@ -41,7 +41,7 @@ X가 주어졌을 때, X번째 분수를 구하는 프로그램을 작성하시�
 
 <br>
 
-{% highlight python %}
+```
 def get_degree(idx) :
     num = 1
 
@@ -51,11 +51,11 @@ def get_degree(idx) :
 
     return num-1
 
-{% endhighlight %}
+```
 
 <br>
 
-{% highlight python %}
+```
 idx = int(input())
 
 num = get_degree(idx)
@@ -73,7 +73,7 @@ for n in range(1,num+1) :
     stack.extend(degree)
 
 print(stack[idx-1])
-{% endhighlight %}
+```
 
 <br>
 <br>
@@ -82,7 +82,7 @@ print(stack[idx-1])
 
 **풀이2**
 <br>
-{% highlight python %}
+```
 
 idx=int(input())
 
@@ -104,7 +104,7 @@ else:
     
 print("{}/{}".format(numer,denom))
 
-{% endhighlight %}
+```
 
 
 

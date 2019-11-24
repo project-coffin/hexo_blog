@@ -54,7 +54,7 @@ collections의 Counter를 쓰지 않을 땐 아래처럼 했다.
 
 <br>
 
-{% highlight python %}
+```
 
 def mode(nums):
     nums = sorted(nums)
@@ -67,7 +67,7 @@ def mode(nums):
 
     ...(생략)...
 
-{% endhighlight %}
+```
 
 <br>
 
@@ -156,7 +156,7 @@ def mode(nums):
 
 <br>
 
-{% highlight python %}
+```
 def mean(nums):
     return round(sum(nums)/len(nums))
 
@@ -189,7 +189,7 @@ print(mean(numbers))
 print(median(numbers))
 print(mode(numbers))
 print(scope(numbers))
-{% endhighlight %}
+```
 
 <br>
 <br>

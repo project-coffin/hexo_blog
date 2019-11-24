@@ -34,7 +34,7 @@ cover: "/assets/dailystudy.jpg"
 
 <br>
 
-{% highlight python %}
+```
 import math
 
 room_num = list(map(int, str(input())))
@@ -52,7 +52,7 @@ for n in room_num :
     
 answer = math.ceil(max(num_set.values()))
 print(answer)
-{% endhighlight %}
+```
 
 <br>
 
@@ -60,7 +60,7 @@ print(answer)
 
 <br>
 
-{% highlight python %}
+```
 import math
 
 room_num = list(map(int, str(input())))
@@ -75,5 +75,5 @@ for n in room_num :
     
 answer = math.ceil(max(num_set))
 print(answer)
-{% endhighlight %}
+```
 

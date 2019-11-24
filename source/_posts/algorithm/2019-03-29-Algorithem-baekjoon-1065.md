@@ -34,7 +34,7 @@ cover: "/assets/dailystudy.jpg"
 **코드**
 <br>
 
-{% highlight python %}
+```
 
 num = int(input())
 hansu = 0
@@ -48,7 +48,7 @@ for n in range(1, num+1) :
         if nums[0] - nums[1] == nums[1] - nums[2] : #등차수열 확인
             hansu+=1
 
-{% endhighlight %}
+```
 
 
 <br>

@@ -43,7 +43,7 @@ cover: "/assets/dailystudy.jpg"
 **코드1**
 <br>
 
-{% highlight python %}
+```
 
 string = input("")
 if string == " ": # 문장 자체가 공백인 경우 
@@ -56,7 +56,7 @@ else :
         
 print(len(words))
 
-{% endhighlight %}
+```
 
 
 <br>
@@ -66,14 +66,14 @@ print(len(words))
 
 <br>
 
-{% highlight python %}
+```
 
 string = input("")
 words = string.split(" ")
 words = [w for w in words if w != ""] # 공백이 아닌 경우에만 words에 넣음 # 리스트 조건제시법
 print(len(words)) 
 
-{% endhighlight %}
+```
 
 
 <br>

@@ -37,7 +37,7 @@ cover: "/assets/dailystudy.jpg"
 
 <br>
 
-{% highlight python %}
+```
 import random
 
 heights = []
@@ -55,4 +55,4 @@ dwarfs = sorted(dwarfs) # 오름차순 정렬
 
 for h in dwarfs:
     print(h)
-{% endhighlight %}
+```

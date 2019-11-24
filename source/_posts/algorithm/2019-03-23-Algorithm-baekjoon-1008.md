@@ -46,7 +46,7 @@ cover: "/assets/dailystudy.jpg"
 
 <br>
 
-{% highlight python %}
+```
 
 #소숫점 32자리까지 표현
 %precision 32
@@ -54,7 +54,7 @@ cover: "/assets/dailystudy.jpg"
 #다시 복구하려면
 %precision %r
 
-{% endhighlight %}
+```
 
 <br>
 
@@ -62,13 +62,13 @@ cover: "/assets/dailystudy.jpg"
 
 <br>
 
-{% highlight python %}
+```
 
 import math
 
 math.isclose(1, 3, rel_tol=0.1e-9, abs_tol=0.1e-9) # False 반환
 
-{% endhighlight %}
+```
 
 <br>
 
@@ -76,12 +76,12 @@ math.isclose(1, 3, rel_tol=0.1e-9, abs_tol=0.1e-9) # False 반환
 
 <br>
 
-{% highlight python %}
+```
 
 a,b=map(int,input().split())
 print('%0.9f'%(a/b))
 
-{% endhighlight %}
+```
 
 <br>
 <br>

@@ -34,7 +34,7 @@ cover: "/assets/dailystudy.jpg"
 
 <br>
 
-{% highlight python %}
+```
 
 x, y=map(int,input().split())
 
@@ -44,7 +44,7 @@ print(x*y)
 print(x//y) 
 print(x%y)
 
-{% endhighlight %}
+```
 
 
 <br>
@@ -82,7 +82,7 @@ print(x%y)
 
 <br>
 
-{% highlight python %}
+```
 
 a, b, c = map(int,input().split())
 
@@ -91,7 +91,7 @@ print(( (a%c) + (b%c) )%c)
 print((a*b)%c)
 print(( (a%c) * (b%c) )%c)
 
-{% endhighlight %}
+```
 
 
 <br>
@@ -125,14 +125,14 @@ print(( (a%c) * (b%c) )%c)
 
 <br>
 
-{% highlight python %}
+```
 
 import sys
 
 a, b = map(int, sys.stdin.read().splitlines())
 print(a+b)
 
-{% endhighlight %}
+```
 
 <br>
 <br>

@@ -59,7 +59,7 @@ cover: "/assets/dailystudy.jpg"
 **코드**
 <br>
 
-{% highlight python %}
+```
 
 ya = 20 # 2007년의 20
 yb = 7 # 2007년의 07
@@ -79,7 +79,7 @@ h = (d +  int(((m+1)*13)/5) + yb + int(yb/4) + int(ya/4) - 2*ya ) % 7
 
 print(days[h])
 
-{% endhighlight %}
+```
 
 
 

@@ -60,7 +60,7 @@ $$ \frac{(\bar{X} - E(\bar{X}))}{sd(\bar{X})} = \frac{(\bar{X} - μ)}{\frac{σ}{
 
 <br>
 
-{% highlight python %}
+```
 
 # Central limit theorem
 # floor : 버림
@@ -73,7 +73,7 @@ hist(x)
 mean(x)
 sd(x)
 
-{% endhighlight %}
+```
 
 <br>
 
@@ -85,7 +85,7 @@ sd(x)
 
 <br>
 
-{% highlight python %}
+```
 
 y = array(x, c(500,5))
 y # 2500개의 정수를 5개씩 묶어서 500개의 표본으로 만든다.
@@ -99,7 +99,7 @@ hist(xbar)
 mean(xbar)
 sd(xbar)
 
-{% endhighlight %}
+```
 
 <br>
 

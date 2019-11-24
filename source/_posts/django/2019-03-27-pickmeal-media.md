@@ -56,7 +56,7 @@ settings.py에 STATIC_ROOT 코드 밑에 MEDIA_URL과 MEDIA_ROOT를 추가한다
 
 <br>
 
-{% highlight python %}
+```
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static') #개발자가 관리하는 파일들 
@@ -64,7 +64,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static') #개발자가 관리하는 파일
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media') #사용자가 업로드한 파일 관리
 
-{% endhighlight %}
+```
 
 <br>
 <br>
@@ -82,7 +82,7 @@ urlpatterns += \
 
 **urls.py 코드**
 <br>
-{% highlight python %}
+```
 
 from django.contrib import admin
 from django.urls import path, include
@@ -96,7 +96,7 @@ urlpatterns = [
 
 urlpatterns += \\ #개행할 때 백슬래시를 써주면 다음 줄로 넘어갈 수 있다.
     static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-{% endhighlight %}
+```
 
 <br>
 <br>
@@ -118,7 +118,7 @@ reviewBoard는 내 django 앱의 이름이다. models.Imagefield()에 `(upload_t
 
 <br>
 
-{% highlight python %}
+```
 
 class Review(models.Model) :
 
@@ -126,14 +126,14 @@ class Review(models.Model) :
 
     # ...생략... 
  
-{% endhighlight %}
+```
 
 <br>
 <br>
 
 **Review 모델 전체 코드**
 
-{% highlight python %}
+```
 
 class Review(models.Model) :
     restaurant = models.ForeignKey(Restaurant, on_delete=models.PROTECT)
@@ -148,7 +148,7 @@ class Review(models.Model) :
     def __str__(self) :
         return self.title
 
-{% endhighlight %}
+```
 
 <br>
 <br>

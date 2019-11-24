@@ -39,7 +39,7 @@ docstring으로도 출력할 수 있지 않을까? 싶어서 해봤는데 잘못
 
 <br>
 
-{% highlight python %}
+```
 dog = """
 |\_/|
 |q p|   /}
@@ -48,7 +48,7 @@ dog = """
 ||_/=\\\__|"""
 
 print(dog)
-{% endhighlight %}
+```
 
 <br>
 <br>
@@ -57,13 +57,13 @@ print(dog)
 
 <br>
 
-{% highlight python %}
+```
 print("|\_/|")
 print("|q p|   /}")
 print("( 0 )\"\"\"\\")
 print("|\"^\"`    |")
 print("||_/=\\\__|")
-{% endhighlight %}
+```
 
 <br>
 <br>

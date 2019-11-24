@@ -62,7 +62,7 @@ cover: "/assets/dailystudy.jpg"
 
 <br>
 
-{% highlight python %}
+```
 
 people_nums = []
 people = 0 
@@ -76,7 +76,7 @@ for _ in range(4) :
     
 print(max(people_nums))
 
-{% endhighlight %}
+```
 
 <br>
 <br>

@@ -42,11 +42,11 @@ cover: "/assets/DataAnalysis.gif"
 
 <br>
 
-{% highlight python %}
+```
 
 setwd('C:/Users/roseline/R')
 
-{% endhighlight %}
+```
 
 <br>
 
@@ -69,7 +69,7 @@ setwd('C:/Users/roseline/R')
 <br>
 
 
-{% highlight python %}
+```
 
 # Sample Rprofile.site file
 
@@ -109,7 +109,7 @@ options(graphics.record=TRUE)
   cat("\nGoodbye at ", date(), "\n")
 }
 
-{% endhighlight %}
+```
 
 <br>
 
@@ -119,12 +119,12 @@ options(graphics.record=TRUE)
 
 <br>
 
-{% highlight python %}
+```
 
 Sys.setenv("plotly_username"="plotly 아이디")
 Sys.setenv("plotly_api_key"="API 키")
 
-{% endhighlight %}
+```
 
 <br>
 <br>
@@ -138,7 +138,7 @@ api_create() 함수가 잘 동작하는지 확인해보자.
 
 <br>
 
-{% highlight python %}
+```
 
 library(tidyverse) 
 library(plotly) #install.packages("plotly")로 패키지 추가
@@ -168,7 +168,7 @@ p <- gapminder %>%
 chart_link = api_create(p, filename="animations-mulitple-trace")
 chart_link
 
-{% endhighlight %}
+```
 
 <br>
 <br>

@@ -28,7 +28,7 @@ PickMeal은 한양대 주변 맛집 리뷰를 알려주고, 결정 장애를 겪
 
 <br>
 
-{% highlight python %}
+```
 
 import PIL # Review 모델의 imagefield를 위해 추가 
 from django.db import models
@@ -51,7 +51,7 @@ class Restaurant(models.Model) :
     def __str__(self) :
         return self.name 
 
-{% endhighlight %}
+```
 
 <br>
 
@@ -72,7 +72,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 <br>
 
-{% highlight python %}
+```
 
 class Review(models.Model) :
     restaurant = models.ForeignKey(Restaurant, on_delete=models.PROTECT)
@@ -87,7 +87,7 @@ class Review(models.Model) :
     def __str__(self) :
         return self.title
 
-{% endhighlight %}
+```
 
 <br>
 <br>
@@ -100,7 +100,7 @@ reviewBoard 앱에 마이그레이션을 끝내고, createsuperuser로 관리자
 
 <br>
 
-{% highlight python %}
+```
 
 python manage.py makemigrations reviewBoard
 python manage.py migrate reviewBoard
@@ -109,7 +109,7 @@ python manage.py migrate # 이걸 먼저 안해서 createsuperuser가 안됬었�
 
 python manage.py createsuperuser
 
-{% endhighlight %}
+```
 
 <br>
 <br>

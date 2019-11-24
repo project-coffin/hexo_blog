@@ -21,7 +21,7 @@ cover: "/assets/DataAnalysis.gif"
 
 <br>
 
-{% highlight python %}
+```
 library(tidyverse)
 library(plotly)
 library(COUNT)
@@ -31,7 +31,7 @@ df <- read.csv('dataset/chicken.csv',
                fileEncoding = 'euc-kr',
                encoding = 'utf-8') 
 
-{% endhighlight %}
+```
 
 <br>
 <br>
@@ -83,11 +83,11 @@ encoding = 'utf-8'
 
 <br>
 
-{% highlight python %}
+```
 
 names(df) # 컬럼 이름들 확인
 
-{% endhighlight %}
+```
 
 <br>
 <br>
@@ -101,7 +101,7 @@ names(df) # 컬럼 이름들 확인
 
 <br>
 
-{% highlight python %}
+```
 
 date <- as.Date(as.character(df$기준일), format = "%Y%m%d")
 lt <- unclass(as.POSIXlt(date))
@@ -111,7 +111,7 @@ df[, c("날짜", "연", "월", "일")] <- with(lt,
                                 , 월 = mon + 1
                                 , 일 = mday))
 
-{% endhighlight %}
+```
 
 
 **또 다른 방법 : 기준일을 주별로 나누기**
@@ -122,7 +122,7 @@ df[, c("날짜", "연", "월", "일")] <- with(lt,
 
 <br>
 
-{% highlight python %}
+```
 
 df$date <- cut(df$기준일, seq(20190101,20190131,7),right = F)
 
@@ -138,7 +138,7 @@ df$re.date
 
 head(df)
 
-{% endhighlight %}
+```
 
 <br>
 <br>
@@ -150,14 +150,14 @@ head(df)
 
 <br>
 
-{% highlight python %}
+```
 
 df2 <- cbind(df[,11:13], df[,2:4], df[,6:7], df[9])
 
 head(df)
 head(df2)
 
-{% endhighlight %}
+```
 
 <br>
 
@@ -168,11 +168,11 @@ head(df2)
 
 <br>
 
-{% highlight python %}
+```
 
 levels(df2$성별) <- c(1, 0)
 
-{% endhighlight %}
+```
 
 <br>
 <br>
@@ -191,7 +191,7 @@ levels(df2$성별) <- c(1, 0)
 
 <br>
 
-{% highlight python %}
+```
 
 p <- df2 %>%
   plot_ly(
@@ -205,7 +205,7 @@ p <- df2 %>%
 
 ggplotly(p)
 
-{% endhighlight %}
+```
 
 <br>
 <br>

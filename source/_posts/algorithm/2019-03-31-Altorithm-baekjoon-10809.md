@@ -32,7 +32,7 @@ cover: "/assets/dailystudy.jpg"
 
 ### 해결
 
-{% highlight python %}
+```
 
 alphabet = list(map(chr, range(97, 123)))
 al_dict = dict(zip(alphabet, [-1]*26))
@@ -46,7 +46,7 @@ for i, s in enumerate(string) :
 for v in al_dict.values() : 
     print(v, end=" ")
 
-{% endhighlight %}
+```
 
 <br>
 <br>

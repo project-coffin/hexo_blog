@@ -34,10 +34,10 @@ cover: "/assets/dailystudy.jpg"
 
 <br>
 
-{% highlight python %}
+```
 print(푼문제 개수)
 print("아이디")
-{% endhighlight %}
+```
 
 <br>
 <br>

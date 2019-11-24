@@ -38,7 +38,7 @@ N개의 수가 주어졌을 때, 이를 오름차순으로 정렬하는 프로�
 
 <br>
 
-{% highlight python %}
+```
 N = int(input())
 
 numbers = []
@@ -55,14 +55,14 @@ for i in range(len(numbers)) :
 for n in numbers : 
     print(n)
 
-{% endhighlight %}
+```
 
 <br>
 <br>
 
 **삽입 정렬**
 
-{% highlight python %}
+```
 
 N = int(input())
 nums = []
@@ -80,4 +80,4 @@ for i in range(1, len(nums)) :
 for n in nums : 
     print(n)
 
-{% endhighlight %}
+```

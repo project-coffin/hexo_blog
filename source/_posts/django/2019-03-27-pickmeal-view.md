@@ -45,7 +45,7 @@ cover: "/assets/django2.jpg"
 **리스트 뷰**
 
 
-{% highlight python %}
+```
 
 from django.shortcuts import render, get_object_or_404 
 from .models import Restaurant, Review #1
@@ -58,7 +58,7 @@ def index(request) :
                 "reveiwBoard/review_index.html", 
                 {'restaurants':restaurants}) #3
 
-{% endhighlight %}
+```
 
 <br>
 <br>
@@ -67,13 +67,13 @@ def index(request) :
 - #2 : django ORM으로 Restaurant의 데이터 객체를 모두 가져온다. '쿼리셋'이라고 하는데 이를 restaurants 변수에 담는다. 
 - #3 : 두번째 인자에는 이 데이터를 담아서 보여줄 템플릿 경로를 써주고, 세번째 인자는 위처럼 딕셔너리를 바로 전달해도 되고 전해야할 데이터가 많은 경우 아래처럼 해도 된다. render 함수에 바로 인자를 전달할 수 있으나 가독성을 위해 context 변수에 담아서 전달한다.
 <br>
-{% highlight python %}
+```
 context = {'one' : one,
            'others' : others,
            'another' : another,}
 
 render(request, '템플릿 경로', context)
-{% endhighlight %}
+```
 
 
 <br>
@@ -82,14 +82,14 @@ render(request, '템플릿 경로', context)
 **디테일 뷰**
 
 
-{% highlight python %}
+```
 
 # 상세 리뷰 페이지를 보여줄 detail 뷰
 def detail(request, pk) : #1
     review = get_object_or_404(Review, pk=pk) #2
 
     return render(request, "reviewBoard/review_detail.html", {'review' : review}) #3
-{% endhighlight %}
+```
 
 <br>
 
@@ -110,7 +110,7 @@ def detail(request, pk) : #1
 
 <br>
 
-{% highlight python %}
+```
 
 from django.urls import path
 from . import views
@@ -119,7 +119,7 @@ urlpatterns = [
     path('', views.index, name="index"), #1
     path('review/<int:pk>/', views.detail, name="review-detail"), #2
 ]
-{% endhighlight %}
+```
 
 <br>
 
@@ -134,7 +134,7 @@ Django에서는 함수형 뷰가 복잡해지는 것을 막고, 코드의 재활
 
 <br>
 
-{% highlight python %}
+```
 
 from django.views.generic import ListView, DetailView #1
 
@@ -145,7 +145,7 @@ class ReviewListView(ListView) :
     template_name = "reviewBoard/index.html" #3
     context_object_name = "restaurants" #4
 
-{% endhighlight %}
+```
 
 <br>
 
@@ -158,7 +158,7 @@ class ReviewListView(ListView) :
 <br>
 
 
-{% highlight python %}
+```
 
 # 상세 페이지뷰
 class ReviewDetailView(DetailView):
@@ -167,7 +167,7 @@ class ReviewDetailView(DetailView):
     context_object_name = 'review' #3
 
 
-{% endhighlight %}
+```
 
 <br>
 
@@ -186,7 +186,7 @@ class ReviewDetailView(DetailView):
 
 <br>
 
-{% highlight python %}
+```
 
 from django.urls import path
 from . import views
@@ -197,7 +197,7 @@ urlpatterns = [
         views.ReviewDetailView.as_view(), 
         name="review-detail"), #2
 ]
-{% endhighlight %}
+```
 
 <br>
 <br>

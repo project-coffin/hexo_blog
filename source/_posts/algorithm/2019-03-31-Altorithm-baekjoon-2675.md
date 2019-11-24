@@ -32,7 +32,7 @@ QR Code "alphanumeric" 문자는 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ\$%*+-./: �
 
 ### 해결
 
-{% highlight python %}
+```
 
 n = int(input())
 
@@ -50,7 +50,7 @@ for s in strings :
     
     print()
 
-{% endhighlight %}
+```
 
 <br>
 <br>

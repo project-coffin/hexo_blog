@@ -26,7 +26,7 @@ R로 무작위 팀을 배정하는 함수를 만들었다. 사실 python으로 G
 3. **전체 코드** : 아래에 코드를 설명하겠다.  
 
 <br>
-{% highlight python %}
+```
 R.andom.team <- function(fileName, leaders, times=1) {
   # @Roseline Song 2019
   # Assigns teams randomly from attendance file.
@@ -111,7 +111,7 @@ R.andom.team <- function(fileName, leaders, times=1) {
 
 leaders <- c("홍길동","동길홍", "윤동길", "윤길동")
 R.andom.team("R_study/students.xls",leaders)
-{% endhighlight %}
+```
 
 <br>
 
@@ -128,7 +128,7 @@ R.andom.team("R_study/students.xls",leaders)
 
 <br>
 
-{% highlight python %}
+```
 R.andom.team <- function(fileName, leaders, times=1) {
   # @Hyunji Song 2019
   library(readxl)
@@ -143,7 +143,7 @@ R.andom.team <- function(fileName, leaders, times=1) {
            warning=function(w) print("warning! warning!"),
            finully=NULL)
 
-{% endhighlight %}
+```
 
 <br>
 
@@ -162,7 +162,7 @@ R.andom.team <- function(fileName, leaders, times=1) {
 
 <br>
 
-{% highlight python %}
+```
  # Indexing
   df <- raw_df[, c(4,6,7)]
   df <- na.omit(df)  
@@ -170,7 +170,7 @@ R.andom.team <- function(fileName, leaders, times=1) {
   # Rename columns
   colnames(df) <- c("major", "id", "name")
   print(df)
-{% endhighlight %}
+```
 
 <br>
 
@@ -185,7 +185,7 @@ R.andom.team <- function(fileName, leaders, times=1) {
 **4. 팀장 그룹, 팀원 그룹 나누기 + 팀원 그룹 랜덤으로 섞기.**
 
 <br>
-{% highlight python %}
+```
 
 # Devide groups into two groups(leaders, mates)
   l_df <- df[df$name %in% leaders, ]
@@ -199,7 +199,7 @@ R.andom.team <- function(fileName, leaders, times=1) {
   for(n in seq(times)){
     m_df <- m_df[sample(nrow(m_df)), ]
   } 
-{% endhighlight %}
+```
 
 팀장에게 팀원을 한 명씩 할당하는 그림을 생각했다. 그래서 한 반을 두 개의 그룹으로 쪼개고, 팀장에게는 팀 번호를 부여했다. 팀원은 무작위 배정을 위해 팀 번호를 부여하기 전 파이썬의 random.shuffle()과 비슷한 역할을 하는 **sample()함수**를 활용했다.
 
@@ -210,7 +210,7 @@ R.andom.team <- function(fileName, leaders, times=1) {
 **4. 팀원 할당하기**
 
 <br>
-{% highlight python %}
+```
 
  # Assign team numbers to mates 
   rep_num <- rep(team_num, (round(nrow(m_df)/length(team_num)))+1)
@@ -218,7 +218,7 @@ R.andom.team <- function(fileName, leaders, times=1) {
   
   # Row bind leaders_group and mates_group
   rand_teams <- rbind(l_df, m_df)
-{% endhighlight %}
+```
 
 3에서 팀장에게 각각 부여된 팀 번호가 무작위로 섞인 팀원 그룹에게 순서대로 할당된다. ex) 1,2,3,4 / 1,2,3,4 / ... 
 
@@ -230,7 +230,7 @@ R.andom.team <- function(fileName, leaders, times=1) {
 **5. 결과 보여주기**
 
 <br>
-{% highlight python %}
+```
 
 ########## Show result ##########  
   require(dplyr)
@@ -262,7 +262,7 @@ R.andom.team <- function(fileName, leaders, times=1) {
   
   return(rand_teams)  
 }
-{% endhighlight %}
+```
 <br>
 
 
@@ -285,7 +285,7 @@ R.andom.team <- function(fileName, leaders, times=1) {
 
 
 <br>
-{% highlight python %}
+```
 str_len <- function(string) {
   s <- unlist(strsplit(string,""))
   return(length(s))  
@@ -312,7 +312,7 @@ R.love.u <- function(message) {
 
 R.love.u("R Love You")
  ​
-{% endhighlight %}
+```
 <br>
 
 

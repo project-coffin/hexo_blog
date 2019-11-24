@@ -34,7 +34,7 @@ cover: "/assets/dailystudy.jpg"
 
 ### 해결
 
-{% highlight python %}
+```
 
 a, b = input().split()
 
@@ -46,7 +46,7 @@ if a > b :
 else :
     print(b)
 
-{% endhighlight %}
+```
 
 <br>
 <br>

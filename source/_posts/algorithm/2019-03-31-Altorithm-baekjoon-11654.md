@@ -30,14 +30,14 @@ cover: "/assets/dailystudy.jpg"
 
 ### 해결
 
-{% highlight python %}
+```
 
 # chr() : 65 -> A 
 # ord() : A -> 65
 
 print(ord(input()))
 
-{% endhighlight %}
+```
 
 <br>
 <br>

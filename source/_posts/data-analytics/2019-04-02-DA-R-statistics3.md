@@ -88,13 +88,13 @@ pnorm은 정규분포의 확률을 말한다. pnorm(x, μ, σ)은 **N(μ, σ^2)�
 <br>
 
 
-{% highlight python %}
+```
 
 # R
 
 pnorm(2,0,1)
 
-{% endhighlight %}
+```
 
 
 <br>
@@ -109,13 +109,13 @@ qnorm은 정규분포에서 P(X ≤ x) 를 만족하는 x를 α로 놓는다.
 
 <br>
 
-{% highlight python %}
+```
 
 # R
 
 qnorm(0.03, 0, 1)
 
-{% endhighlight %}
+```
 
 <br>
 <br>

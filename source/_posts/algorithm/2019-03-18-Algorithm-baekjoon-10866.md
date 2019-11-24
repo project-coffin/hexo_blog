@@ -47,7 +47,7 @@ cover: "/assets/dailystudy.jpg"
 <br>
 
 **명령어 구현**
-{% highlight python %}
+```
 def push_front(x, deq):
     tmp = [x]
     tmp.extend(deq)
@@ -91,13 +91,13 @@ def back(deq) :
     else :
         print(-1)
 
-{% endhighlight %}
+```
 
 <br>
 
 
 **명령어 사전**
-{% highlight python %}
+```
 statements_dict = {
     'push_front' : push_front,
     'push_back' : push_back,
@@ -108,12 +108,12 @@ statements_dict = {
     'front' : front,
     'back' : back
 }
-{% endhighlight %}
+```
 
 <br>
 
 **명령어 처리**
-{% highlight python %}
+```
 
 N = int(input())
 
@@ -129,4 +129,4 @@ for _ in range(N) :
         command, x = statement
         deq = statements_dict[command](x, deq)
 
-{% endhighlight %}
+```
