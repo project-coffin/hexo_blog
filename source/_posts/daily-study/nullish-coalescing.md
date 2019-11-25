@@ -10,9 +10,15 @@ tags: 기록 공부
 
 - [V8](https://v8.dev/features/nullish-coalescing)
 
+<br>
+<br>
+
 ### Falsy value (거짓같은 값)
 
 [거짓 같은 값(Falsy) 값은 불리언 문맥에서 false로 평가되는 값](https://developer.mozilla.org/ko/docs/Glossary/Falsy)이다. 참, 거짓을 판단할 때 `'', NaN, 0, null, undefined, false` 같이 false로 인식되는 값을 의미한다.
+
+<br>
+<br>
 
 ### ||와 ??(nullish coalescing)의 차이
 
@@ -31,7 +37,9 @@ sayHello('Roseline') // Hello, Roseline!
 
 `||` 앞에 있는 변수가 falsy하지 않다면 변수의 값을 반환하고, 만약 `sayHello('')`나 `sayHello()`처럼 falsy한 값이 들어온다면, 뒤의 기본값을 사용한다.
 
-**3. ?? (nullish coalescing)**
+<br>
+
+**2. ?? (nullish coalescing)**
 
 `nullish`하다는 것은 확실하게 null이거나, undefined인 것을 의미한다. ??은 falsy한 값들이 false로 인식되지 않아서 값을 그대로 사용할 수 있다. 
 
