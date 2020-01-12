@@ -96,3 +96,10 @@ theme: brewski
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: ''
+
+# SEO
+## Site map
+sitemap:
+    path: sitemap.xml
+    # template: ./sitemap_template.xml // custome template
+    rel: false
