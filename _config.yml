@@ -38,7 +38,7 @@ external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
   exclude: ''
-filename_case: 0
+filename_case: 1 # 1 makes link to lower case
 render_drafts: false
 post_asset_folder: false
 relative_link: false
@@ -61,6 +61,14 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
+  Javascript: javascript
+  KuberDocker: kuberdocker
+  algorithm: algorithm
+  daily-study: daily-study,
+  data-analytics: data-analytics,
+  django: django,
+  java: java,
+
 tag_map:
 
 # Metadata elements
